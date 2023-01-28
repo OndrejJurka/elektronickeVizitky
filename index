@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eVizitka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  
+
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:0%">
+  <div class="bgimg"></div>
+</nav>
+
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Úvod</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Jak to funguje?</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">O projektu</a>
+    <a href="#plans" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Plány</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Kontakt</a>
+
+  </div>
+</nav>
+
+<div class="w3-main w3-padding-large" style="margin-left:0%">
+
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>eVizitka</b></h1>
+    <p>Digitální vizitka jednoduše.</p>
+    <img src="https://evizitka.w3spaces.com/fotky/evizitka_foto.jpg" class="responsive"><br>
+    <button onclick="location.href='#contact'" class="w3-button w3-light-grey w3-padding-large w3-margin-top">Poslat poptávku</button>
+  </header>
+
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Jak to funguje?</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-row-padding w3-text-grey" style="margin:0 -16px">
+      <div class="w3-half"></div>
+        <center><img src="./fotky/test.vizitky.jpg" id="outlined-img" width="30%" height="30%"><br><br></center>
+        <p>eVizitka je stejná jako vizitka klasická - papírová, má ale jeden malý bonus. Obsahuje QR kód, který po naskenování odkáže uživatele na vaši vlastní, na míru vytvořenou webovou stránku. Mezi hlavní výhody eVizitky patří to, že můžete snadno změnit informace, které uživateli poskytnete. Například pokud se vám změní emailová adresa nebo telefonní číslo, stačí telefonát, nebo poslat email a informace budou aktualizovány. Díky eVizitkám také můžete uživatelům nabídnout více informací než se vejde na klasickou vizitku, a to včetně obrázků, videí, animací, případně zvuků. Služba dodá vizitku v elektronické formě na email, nikoli tištěnou verzi poštou.</p>
+      </div>
+
+      <style>
+      #outlined-img {
+        outline: 1px solid lightgrey;
+      }
+      
+.responsive {
+  width: 100%;
+  max-width: 65%;
+  height: auto;
+}
+</style>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+.fa-question {
+  color: orange;
+}
+
+</style>
+</head>
+<body>
+<br>
+  <h2 class="w3-text-grey">Porovnání</h2>
+
+<table>
+  <tr>
+    <th style="width:50%">Funkce</th>
+    <th>Klasická vizitka</th>
+    <th>eVizitka</th>
+  </tr>
+  <tr>
+    <td>Papírová vizitka</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td>QR kód propojený s vlastní webovou stránkou</td>
+    <td><i class="fa fa-remove"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td>Jednoduše změnitelné informace</td>
+    <td><i class="fa fa-remove"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td>Podpora</td>
+    <td><i class="fa fa-remove"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+
+</table>
+    </div>
+  </div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>O projektu</h2>
+    <hr class="w3-opacity">
+    <p>eVizitka je inovativní projekt, který usnadňuje předávání kontaktů. Byla spuštěna na přelomu roku 2022 a 2023 a stále se ji snažíme zdokonalovat. Velmi oceníme vaši <a href="https://evizitka.w3spaces.com/zpetna-vazba.html" style="color:black;">zpětnou vazbu</a>, za kterou vám předem děkujeme. </p>
+    <br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Partner
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Hotový projekt
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4</span><br>
+        Šťastní zákazníci
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2</span><br>
+        Aktivní projekty
+      </div>
+    </div>
+
+  <div id="plans" class="w3-row-padding">
+
+      <h2 class="w3-padding-16">Plány</h2>
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Economy</li>
+          <li class="w3-padding-16">✓ Design vizitky na míru</li>
+          <li class="w3-padding-16">✓ Fotografie na vizitce</li>
+          <li class="w3-padding-16">✓ Podpora emailem</li>
+          <li class="w3-padding-16">Maximálně 3 vizitky</li>
+          <li class="w3-padding-16">
+            <h2>750 kč</h2>
+            <span class="w3-opacity">jednorázová platba</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="location.href='#contact'">Odeslat poptávku</button>          </li>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">✓ Vlastní pozadí stránky</li>
+          <li class="w3-padding-16">✓ Animovaná fotografie na vizitce</li>
+          <li class="w3-padding-16">✓ Podpora emailem</li>
+          <li class="w3-padding-16">Maximálně 10 vizitek</li>
+          <li class="w3-padding-16">
+            <h2>1 500 kč</h2>
+            <span class="w3-opacity">jednorázová platba</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="location.href='#contact'">Odeslat poptávku</button>          </li>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-teal w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">✓ Vlastní design, pozadí a vzhled vizitky</li>
+          <li class="w3-padding-16">✓ Animace, fotografie a videa na vizitce</li>
+          <li class="w3-padding-16">✓ Podpora emailem i telefonem</li>
+          <li class="w3-padding-16">Maximálně 35 vizitek</li>
+          <li class="w3-padding-16">
+            <h2>3 000 kč</h2>
+            <span class="w3-opacity">jednorázová platba</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="location.href='#contact'">Odeslat poptávku</button>          </li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+<div style="text-align: center;">
+  <p>O individálních požadavcích se můžeme telefonicky, či emailem domluvit.</p>
+</div>
+  </div>
+
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Kontakt</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon: +420 775 637 385</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: evizitky@aol.com</p>
+    </div>
+    <br>
+   <div id="poslat-poptavku>">
+    <h3>Poslat poptávku:</h3>
+    <form action="https://formsubmit.co/evizitky@aol.com" method="POST">
+    <input type="hidden" name="_blacklist" value="test1">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Poptávka na eVizitku!">
+    <input type="hidden" name="_next" value="https://evizitka.w3spaces.com/hotovo.html">
+
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Jméno *" required name="Jméno"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email *" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Firma" name="Firma"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Zpráva"name="Zpráva"></p>
+
+ <div class="form-group">
+  <label for="Plán">Plán:</label>
+  <select class="form-control" id="userPlan" name="Plán" style="color: #000000; background-color: #ffffff;">
+    <option value="---">---</option>
+    <option value="economy">Economy</option>
+    <option value="basic">Basic</option>
+    <option value="premium">Premium</option>
+  </select>
+</div><br>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> ODESLAT 
+        </button><br><br><br><br>
+      </p>
+    </form>
+  </div>  
+  
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+<a href="https://www.facebook.com/profile.php?id=100089670579262" class="fa fa-facebook-official w3-hover-opacity"></a>
+<a href="https://www.instagram.com/evizitky/"class="fa fa-instagram w3-hover-opacity"></a><!--
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+    <p class="w3-small">Jsme otevřeni novým nápadům. Pokud vidíte způsob, jakým můžeme zlepšit naše služby, budeme rádi za</p>
+    <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey" href="https://evizitka.w3spaces.com/zpetna-vazba.html" target="_blank">zpětnou vazbu</a>  
+  </footer>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
